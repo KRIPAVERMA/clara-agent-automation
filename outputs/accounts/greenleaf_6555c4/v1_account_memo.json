@@ -1,0 +1,25 @@
+{
+  "account_id": "greenleaf_6555c4",
+  "company_name": "GreenLeaf Property Management",
+  "business_hours": "Monday to Friday, 8:00 AM to 6:00 PM MST. We're closed on weekends and federal holidays",
+  "office_address": "4521 Elm Street, Suite 300, Denver, CO 80202",
+  "services_supported": [
+    "Maintenance requests",
+    "rent inquiries",
+    "lease questions",
+    "lockout assistance",
+    "general property information"
+  ],
+  "emergency_definition": "Any situation involving flooding, fire, gas leaks, no heat in winter, no AC when temperatures exceed 100°F, or a security breach at a property",
+  "emergency_routing_rules": "Transfer to our on-call maintenance supervisor at extension 501. If they don't answer, try the backup number 303-555-0199",
+  "non_emergency_routing_rules": "Take a detailed message including the property address and unit number, and schedule a callback for the next business day",
+  "call_transfer_rules": "During office hours, transfer to the front desk at extension 100 first. If no answer, try the property manager on-call at extension 200",
+  "integration_constraints": "We use AppFolio for property management. No direct API integration is needed for now — just standard call handling",
+  "after_hours_flow_summary": "After hours: Greet caller, determine urgency, collect info, route emergencies or take messages for callbacks.",
+  "office_hours_flow_summary": "Standard office hours protocol: greet caller, identify purpose, collect name and phone, transfer to appropriate party, fallback if unavailable.",
+  "questions_or_unknowns": [
+    "And what's your office address?"
+  ],
+  "notes": "Tenants sometimes call about packages — we don't handle package tracking, so just let them know to contact their carrier directly.",
+  "version": 1
+}

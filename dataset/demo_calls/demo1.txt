@@ -1,0 +1,45 @@
+Demo Call Transcript — GreenLeaf Property Management
+Date: 2026-02-15
+Participants: Sarah (Clara Team), Mike (GreenLeaf)
+
+Sarah: Hi Mike, thanks for joining this demo call. Can you start by telling us a bit about your company?
+
+Mike: Sure! We are GreenLeaf Property Management. We manage about 200 residential properties across the Denver metro area.
+
+Sarah: Great. And what's your office address?
+
+Mike: Office Address: 4521 Elm Street, Suite 300, Denver, CO 80202.
+
+Sarah: Got it. What are your business hours?
+
+Mike: Business Hours: Monday to Friday, 8:00 AM to 6:00 PM MST. We're closed on weekends and federal holidays.
+
+Sarah: Perfect. What services does your company handle that Clara should know about?
+
+Mike: Services Supported: Maintenance requests, rent inquiries, lease questions, lockout assistance, and general property information.
+
+Sarah: And how do you define an emergency?
+
+Mike: Emergency Definition: Any situation involving flooding, fire, gas leaks, no heat in winter, no AC when temperatures exceed 100°F, or a security breach at a property.
+
+Sarah: How should emergency calls be routed after hours?
+
+Mike: Emergency Routing: Transfer to our on-call maintenance supervisor at extension 501. If they don't answer, try the backup number 303-555-0199.
+
+Sarah: And for non-emergency calls?
+
+Mike: Non-Emergency Routing: Take a detailed message including the property address and unit number, and schedule a callback for the next business day.
+
+Sarah: What about call transfers during business hours?
+
+Mike: Call Transfer Rules: During office hours, transfer to the front desk at extension 100 first. If no answer, try the property manager on-call at extension 200.
+
+Sarah: Any integration constraints we should know about?
+
+Mike: Integration Constraints: We use AppFolio for property management. No direct API integration is needed for now — just standard call handling.
+
+Sarah: Anything else we should note?
+
+Mike: Notes: Tenants sometimes call about packages — we don't handle package tracking, so just let them know to contact their carrier directly.
+
+Sarah: Thanks Mike, this is really helpful. We'll get your Clara agent configured!

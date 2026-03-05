@@ -1,0 +1,45 @@
+Demo Call Transcript — Sunrise Dental Clinic
+Date: 2026-02-18
+Participants: Alex (Clara Team), Dr. Patel (Sunrise Dental)
+
+Alex: Good morning Dr. Patel! Let's go through the setup details for your Clara agent. First, can you confirm your company name?
+
+Dr. Patel: Yes, this is for Sunrise Dental Clinic.
+
+Alex: And your office address?
+
+Dr. Patel: Office Address: 782 Oak Avenue, Building B, Austin, TX 78701.
+
+Alex: What are your office hours?
+
+Dr. Patel: Business Hours: Monday to Thursday 9:00 AM to 5:00 PM, Friday 9:00 AM to 1:00 PM. Closed Saturday and Sunday.
+
+Alex: What services should the AI agent be aware of?
+
+Dr. Patel: Services Supported: Appointment scheduling, insurance verification, billing questions, prescription refill requests, and new patient registration.
+
+Alex: How do you define a dental emergency?
+
+Dr. Patel: Emergency Definition: Severe tooth pain, knocked-out tooth, uncontrolled bleeding from the mouth, jaw injury, or swelling that affects breathing or swallowing.
+
+Alex: How should after-hours emergency calls be handled?
+
+Dr. Patel: Emergency Routing: Forward to our emergency answering service at 512-555-0147. They will page the on-call dentist.
+
+Alex: And for non-emergencies after hours?
+
+Dr. Patel: Non-Emergency Routing: Collect patient name, phone number, and reason for call. Send details via email to frontdesk@sunrisedental.com for next business day follow-up.
+
+Alex: How should calls be transferred during office hours?
+
+Dr. Patel: Call Transfer Rules: Transfer directly to the front desk reception line at extension 10. If busy, hold for 30 seconds then offer to take a message.
+
+Alex: Any system constraints we should be aware of?
+
+Dr. Patel: Integration Constraints: We use Dentrix for patient management. Clara should not attempt to access or modify patient records. All information collected should be treated as intake notes only.
+
+Alex: Any additional notes?
+
+Dr. Patel: Notes: Patients frequently ask about location and parking. Our parking lot is behind the building with free patient parking. Also, we accept most PPO insurance plans — Clara can let callers know to bring their insurance card to appointments.
+
+Alex: Great, thank you Dr. Patel! We'll have your agent ready soon.

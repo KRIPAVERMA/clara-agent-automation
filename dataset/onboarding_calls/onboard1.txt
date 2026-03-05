@@ -1,0 +1,41 @@
+Onboarding Call Transcript — GreenLeaf Property Management
+Date: 2026-03-01
+Participants: Sarah (Clara Team), Mike (GreenLeaf)
+
+Sarah: Hi Mike, welcome to the onboarding call! We've set up your initial Clara agent based on our demo call. Let's go through any updates or changes.
+
+Mike: Thanks Sarah. We've had a few changes since our last call.
+
+Sarah: Sure, go ahead.
+
+Mike: First, our company name is still GreenLeaf Property Management, that hasn't changed.
+
+Sarah: Got it. Any changes to business hours?
+
+Mike: Actually yes. Business Hours: Monday to Friday, 8:00 AM to 7:00 PM MST. We extended by an hour because of high call volume in the evening.
+
+Sarah: Good to know. What about services?
+
+Mike: Services Supported: Maintenance requests, rent inquiries, lease questions, lockout assistance, general property information, and HOA coordination. We added HOA coordination as a new service.
+
+Sarah: Any update to the emergency definition?
+
+Mike: Emergency Definition: Any situation involving flooding, fire, gas leaks, no heat in winter, no AC when temperatures exceed 95°F, security breaches, or elevator malfunctions. We lowered the AC threshold and added elevator issues.
+
+Sarah: What about emergency routing?
+
+Mike: Emergency Routing: Transfer to on-call maintenance supervisor at extension 501. If no answer, try backup number 303-555-0199, and now also try the property manager cell at 303-555-0250 as a third option.
+
+Sarah: Any changes to the call transfer rules?
+
+Mike: Call Transfer Rules: During office hours, transfer to the front desk at extension 100 first. If no answer after 20 seconds, try extension 200. If still no answer, try the office manager at extension 150.
+
+Sarah: How about integration constraints?
+
+Mike: Integration Constraints: We're now testing an AppFolio API integration for logging maintenance requests. Clara should still handle calls normally but note that automated ticket creation is being piloted.
+
+Sarah: Anything else?
+
+Mike: Notes: We hired a new assistant property manager, Janet, who handles tenant complaints directly. Her extension is 175. Also, we now have a Spanish-speaking staff member available at extension 160 for callers who prefer Spanish.
+
+Sarah: That's great. We'll update your agent configuration right away. Thanks Mike!

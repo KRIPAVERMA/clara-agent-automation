@@ -1,0 +1,25 @@
+{
+  "account_id": "sunrise_e42b03",
+  "company_name": "Sunrise Dental Clinic",
+  "business_hours": "Monday to Thursday 9:00 AM to 5:00 PM, Friday 9:00 AM to 1:00 PM. Closed Saturday and Sunday",
+  "office_address": "782 Oak Avenue, Building B, Austin, TX 78701",
+  "services_supported": [
+    "Appointment scheduling",
+    "insurance verification",
+    "billing questions",
+    "prescription refill requests",
+    "new patient registration"
+  ],
+  "emergency_definition": "Severe tooth pain, knocked-out tooth, uncontrolled bleeding from the mouth, jaw injury, or swelling that affects breathing or swallowing",
+  "emergency_routing_rules": "Forward to our emergency answering service at 512-555-0147. They will page the on-call dentist",
+  "non_emergency_routing_rules": "Collect patient name, phone number, and reason for call. Send details via email to frontdesk@sunrisedental.com for next business day follow-up",
+  "call_transfer_rules": "Transfer directly to the front desk reception line at extension 10. If busy, hold for 30 seconds then offer to take a message",
+  "integration_constraints": "We use Dentrix for patient management. Clara should not attempt to access or modify patient records. All information collected should be treated as intake notes only",
+  "after_hours_flow_summary": "After hours: Greet caller, determine urgency, collect info, route emergencies or take messages for callbacks.",
+  "office_hours_flow_summary": "Standard office hours protocol: greet caller, identify purpose, collect name and phone, transfer to appropriate party, fallback if unavailable.",
+  "questions_or_unknowns": [
+    "None identified"
+  ],
+  "notes": "Patients frequently ask about location and parking. Our parking lot is behind the building with free patient parking. Also, we accept most PPO insurance plans — Clara can let callers know to bring their insurance card to appointments.",
+  "version": 1
+}
