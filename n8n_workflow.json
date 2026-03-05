@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "Clara Agent Automation Pipeline",
   "nodes": [
     {
@@ -8,7 +8,7 @@
         "width": 400
       },
       "id": "1a2b3c4d-0001-0001-0001-000000000001",
-      "name": "Sticky Note — README",
+      "name": "Sticky Note â€” README",
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [-220, -120]
@@ -20,7 +20,7 @@
             {
               "id": "var-server-url",
               "name": "serverUrl",
-              "value": "http://localhost:5000",
+              "value": "http://127.0.0.1:5000",
               "type": "string"
             }
           ]
@@ -43,7 +43,7 @@
     {
       "parameters": {
         "method": "GET",
-        "url": "http://localhost:5000/run/step1",
+        "url": "http://127.0.0.1:5000/run/step1",
         "options": {
           "response": {
             "response": {
@@ -53,14 +53,14 @@
         }
       },
       "id": "1a2b3c4d-0001-0001-0001-000000000004",
-      "name": "Step 1 — Transcribe Onboarding",
+      "name": "Step 1 â€” Transcribe Onboarding",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [440, 300]
     },
     {
       "parameters": {
-        "jsCode": "const r = $input.first().json;\n// Step 1 is optional — transcripts may already exist if Whisper is not installed\nif (r.status === 'error') {\n  const combined = (r.stdout || '') + (r.stderr || '');\n  if (/Missing Python|whisper|ffmpeg|No .mp4|No .m4a/i.test(combined)) {\n    return [{ json: { step: 1, status: 'ok', note: 'Whisper not installed — using existing .txt transcripts.' } }];\n  }\n  throw new Error('Step 1 failed: ' + (r.stderr || r.stdout || JSON.stringify(r)));\n}\nreturn [{ json: { step: 1, status: 'ok', output: r.stdout || '' } }];"
+        "jsCode": "const r = $input.first().json;\n// Step 1 is optional â€” transcripts may already exist if Whisper is not installed\nif (r.status === 'error') {\n  const combined = (r.stdout || '') + (r.stderr || '');\n  if (/Missing Python|whisper|ffmpeg|No .mp4|No .m4a/i.test(combined)) {\n    return [{ json: { step: 1, status: 'ok', note: 'Whisper not installed â€” using existing .txt transcripts.' } }];\n  }\n  throw new Error('Step 1 failed: ' + (r.stderr || r.stdout || JSON.stringify(r)));\n}\nreturn [{ json: { step: 1, status: 'ok', output: r.stdout || '' } }];"
       },
       "id": "1a2b3c4d-0001-0001-0001-000000000005",
       "name": "Check Step 1",
@@ -71,7 +71,7 @@
     {
       "parameters": {
         "method": "GET",
-        "url": "http://localhost:5000/run/step2",
+        "url": "http://127.0.0.1:5000/run/step2",
         "options": {
           "response": {
             "response": {
@@ -81,7 +81,7 @@
         }
       },
       "id": "1a2b3c4d-0001-0001-0001-000000000006",
-      "name": "Step 2 — Extract Account Data",
+      "name": "Step 2 â€” Extract Account Data",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [880, 300]
@@ -99,7 +99,7 @@
     {
       "parameters": {
         "method": "GET",
-        "url": "http://localhost:5000/run/step3",
+        "url": "http://127.0.0.1:5000/run/step3",
         "options": {
           "response": {
             "response": {
@@ -109,7 +109,7 @@
         }
       },
       "id": "1a2b3c4d-0001-0001-0001-000000000008",
-      "name": "Step 3 — Generate v1 Agent Specs",
+      "name": "Step 3 â€” Generate v1 Agent Specs",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [1320, 300]
@@ -127,7 +127,7 @@
     {
       "parameters": {
         "method": "GET",
-        "url": "http://localhost:5000/run/step4",
+        "url": "http://127.0.0.1:5000/run/step4",
         "options": {
           "response": {
             "response": {
@@ -137,7 +137,7 @@
         }
       },
       "id": "1a2b3c4d-0001-0001-0001-000000000010",
-      "name": "Step 4 — Apply Onboarding Updates",
+      "name": "Step 4 â€” Apply Onboarding Updates",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [1760, 300]
@@ -155,7 +155,7 @@
     {
       "parameters": {
         "method": "GET",
-        "url": "http://localhost:5000/run/step5",
+        "url": "http://127.0.0.1:5000/run/step5",
         "options": {
           "response": {
             "response": {
@@ -165,7 +165,7 @@
         }
       },
       "id": "1a2b3c4d-0001-0001-0001-000000000012",
-      "name": "Step 5 — Generate v2 Agent Specs",
+      "name": "Step 5 â€” Generate v2 Agent Specs",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [2200, 300]
@@ -197,14 +197,14 @@
       "main": [
         [
           {
-            "node": "Step 1 — Transcribe Onboarding",
+            "node": "Step 1 â€” Transcribe Onboarding",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Step 1 — Transcribe Onboarding": {
+    "Step 1 â€” Transcribe Onboarding": {
       "main": [
         [
           {
@@ -219,14 +219,14 @@
       "main": [
         [
           {
-            "node": "Step 2 — Extract Account Data",
+            "node": "Step 2 â€” Extract Account Data",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Step 2 — Extract Account Data": {
+    "Step 2 â€” Extract Account Data": {
       "main": [
         [
           {
@@ -241,14 +241,14 @@
       "main": [
         [
           {
-            "node": "Step 3 — Generate v1 Agent Specs",
+            "node": "Step 3 â€” Generate v1 Agent Specs",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Step 3 — Generate v1 Agent Specs": {
+    "Step 3 â€” Generate v1 Agent Specs": {
       "main": [
         [
           {
@@ -263,14 +263,14 @@
       "main": [
         [
           {
-            "node": "Step 4 — Apply Onboarding Updates",
+            "node": "Step 4 â€” Apply Onboarding Updates",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Step 4 — Apply Onboarding Updates": {
+    "Step 4 â€” Apply Onboarding Updates": {
       "main": [
         [
           {
@@ -285,14 +285,14 @@
       "main": [
         [
           {
-            "node": "Step 5 — Generate v2 Agent Specs",
+            "node": "Step 5 â€” Generate v2 Agent Specs",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Step 5 — Generate v2 Agent Specs": {
+    "Step 5 â€” Generate v2 Agent Specs": {
       "main": [
         [
           {

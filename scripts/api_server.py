@@ -13,7 +13,13 @@ import sys
 import os
 import subprocess
 import json
+import socketserver
 from http.server import HTTPServer, BaseHTTPRequestHandler
+
+
+class ThreadingHTTPServer(socketserver.ThreadingMixIn, HTTPServer):
+    """Multi-threaded HTTP server so n8n can poll while a step is running."""
+    daemon_threads = True
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PYTHON = sys.executable
@@ -88,7 +94,7 @@ class PipelineHandler(BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
     port = 5000
-    server = HTTPServer(("localhost", port), PipelineHandler)
+    server = ThreadingHTTPServer(("0.0.0.0", port), PipelineHandler)
     print("=" * 55)
     print("  Clara Agent Automation — API Server")
     print(f"  http://localhost:{port}")
